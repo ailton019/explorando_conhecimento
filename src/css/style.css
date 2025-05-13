@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Stringlime";
+  src: url('../font/Stringlime.otf') format('opentype');
+}
+@font-face {
+  font-family: "HogiraV2-Light";
+  src: url('../font/HogiraV2-Light.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: linear-gradient(to bottom, #F0941F, #90A19D  );
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin: 10px;
+  padding: 10px;
+}
+h1 {
+  font-family: "HogiraV2-Light";
+  font-weight: normal;
+  font-size: 3em;
+  color: #111827;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 0 #2828295d, 4px 4px 0 #23232448, 6px 6px 0 #2222222a;
+ background-image: linear-gradient(to bottom, #F0941F, #EF6024);
+}
+
+.sobre-nos{
+  font-family: "Satisfy", cursive;
+  font-weight: normal;
+  font-size: 0.99em;
+  color: #111827;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+.sub-titulo{
+  font-family: "HogiraV2-Light";
+  font-weight: normal;
+  font-size: 2em;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #eee8e8;
+  }
+  a:hover{
+    color: #F0941F;
+    background: #0c0c0c
+  }
+}
+
+.card-tecnologia {
+  background-image: url('../img/tecnologia.png');
+  background-color: #ffffff;
+  background-size: cover;         /* cobre todo o card */
+  background-position: center;    /* centraliza a imagem */
+  background-repeat: no-repeat;   /* evita repetição */
+  
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:50px;
+  height: 100px;
+}
+
+.card-tecnologia:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #fdfeff;
+  background-color: black;
+}
+
+.card-direito {
+  background-image: url('../img/direito.png');
+  background-color: #ffffff;
+  background-size: cover;         /* cobre todo o card */
+  background-position: center;    /* centraliza a imagem */
+  background-repeat: no-repeat;   /* evita repetição */
+  
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:50px;
+  height: 100px;
+}
+.card-direito:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #fdfeff;
+}
+
+.card-ciencia {
+  background-image: url('../img/ciencia.jpeg');
+  background-color: #ffffff;
+  background-size: cover;         /* cobre todo o card */
+  background-position: center;    /* centraliza a imagem */
+  background-repeat: no-repeat;   /* evita repetição */
+  
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:50px;
+  height: 100px;
+}
+.card-ciencia:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #fdfeff;
+}
+
+.botao-voltar {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.botao-voltar:hover {
+  background-color: #d1d5db;
+}
+
+.footer-text {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1em;
+  color: #0c0c0c;
+}
