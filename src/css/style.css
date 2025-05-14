@@ -180,3 +180,79 @@ h1 {
   font-size: 1em;
   color: #0c0c0c;
 }
+
+.botao-html{
+   display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.botao-html:hover {
+  background-color: #131313;
+  color: #F0941F;
+}
+.botao-css{
+   display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.botao-css:hover {
+  background-color: #131313;
+  color: #F0941F;
+}
+.botao-js{
+   display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.botao-js:hover {
+  background-color: #131313;
+  color: #F0941F;
+}
+.botao-py{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.botao-py:hover {
+  background-color: #131313;
+  color: #F0941F;
+}
+.botao-sql{
+   display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.botao-sql:hover {
+  background-color: #131313;
+  color: #F0941F;
+}
