@@ -1,74 +1,200 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  --bg-primary: #060913;
+  --bg-secondary: #0b0f19;
+  --card-bg: rgba(17, 24, 39, 0.5);
+  --card-border: rgba(255, 255, 255, 0.06);
+  --text-main: #f3f4f6;
+  --text-muted: #d1d5db;
+  --text-dark: #9ca3af;
+  --accent-color: #818cf8;
+  --accent-glow: rgba(129, 140, 248, 0.15);
+  --accent-secondary: #34d399;
 }
 
-h1 {
-    text-align: center;
-    color: #0056b3;
-    margin-bottom: 40px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+                    radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.1) 0px, transparent 50%);
+  min-height: 100vh;
+  color: var(--text-main);
+  line-height: 1.8;
+  padding: 3rem 1rem;
 }
 
 main {
-    max-width: 900px;
-    margin: auto;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
+/* Modulo Container Glassmorphism */
 .modulo {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.modulo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary));
 }
 
 .titulo {
-    color: #003366;
-    font-size: 24px;
-    margin-bottom: 15px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 40%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  text-shadow: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff, var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
 }
 
 .subtitulo {
-    font-size: 18px;
-    color: #444;
-    margin-top: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.subtitulo::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 1.25rem;
+  background: var(--accent-color);
+  border-radius: 4px;
+  margin-right: 0.75rem;
 }
 
 .texto {
-    font-size: 16px;
-    line-height: 1.6;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  font-weight: 400;
 }
 
+/* Beautiful custom list styling */
 .lista {
-    padding-left: 20px;
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .lista li {
-    margin-bottom: 10px;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  position: relative;
 }
 
+.lista li strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Specific styles for code elements */
 code {
-    background-color: #eef;
-    padding: 2px 6px;
-    border-radius: 5px;
-    font-family: 'Courier New', monospace;
+  background-color: rgba(99, 102, 241, 0.15);
+  color: #a5b4fc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+  border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
+/* Modern Voltar button */
 .botao-voltar {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1rem;
-  background-color: #e5e7eb;
-  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
   text-decoration: none;
-  color: #1f2937;
+  color: var(--text-main);
+  font-family: 'Outfit', sans-serif;
   font-weight: 500;
-  transition: background-color 0.2s;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .botao-voltar:hover {
-  background-color: #d1d5db;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: translateX(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme accent customization based on page classes if needed */
+.theme-html-css { --accent-color: #ff4b4b; --accent-glow: rgba(255, 75, 75, 0.15); }
+.theme-js { --accent-color: #f59e0b; --accent-glow: rgba(245, 158, 11, 0.15); }
+.theme-py { --accent-color: #3b82f6; --accent-glow: rgba(59, 130, 246, 0.15); }
+.theme-sql { --accent-color: #06b6d4; --accent-glow: rgba(6, 182, 212, 0.15); }
+.theme-git { --accent-color: #f05032; --accent-glow: rgba(240, 80, 50, 0.15); }
+.theme-github { --accent-color: #e5e7eb; --accent-glow: rgba(255, 255, 255, 0.1); }
+.theme-antigravity { --accent-color: #10b981; --accent-glow: rgba(16, 185, 129, 0.15); }
+.theme-ia { --accent-color: #a78bfa; --accent-glow: rgba(167, 139, 250, 0.15); }
+.theme-notion { --accent-color: #d1d5db; --accent-glow: rgba(209, 213, 219, 0.1); }
+.theme-vscode { --accent-color: #3b82f6; --accent-glow: rgba(59, 130, 246, 0.15); }
+.theme-google { --accent-color: #4285f4; --accent-glow: rgba(66, 133, 244, 0.15); }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modulo {
+    padding: 1.75rem;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .texto {
+    font-size: 1rem;
+  }
+  .lista li {
+    font-size: 1rem;
+  }
 }

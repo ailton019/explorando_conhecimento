@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo SQL - BitMind.dev</title>
     <link rel="stylesheet" href="./src/css/html-style.css">
     <link rel="shortcut icon" href="./src/img/icons8-sql-60.png">
+    <title>SQL - BitMind.dev</title>
 </head>
-<body>
-    <h1>Módulo SQL</h1>
+<body class="theme-sql">
+    <h1>SQL</h1>
 
     <main>
         <section class="modulo">
@@ -16,31 +16,33 @@
 
             <h3 class="subtitulo">O que é SQL?</h3>
             <p class="texto">
-                SQL (Structured Query Language) é a linguagem padrão para gerenciamento de bancos de dados relacionais. Ela permite consultar, inserir, atualizar e excluir dados em sistemas como MySQL, PostgreSQL, SQL Server e outros.
+                SQL (Structured Query Language, ou Linguagem de Consulta Estruturada) é a linguagem de programação padrão internacional para gerenciamento, manipulação e consulta de bancos de dados relacionais. 
+                Com ela, desenvolvedores e analistas podem extrair informações específicas, cruzar tabelas complexas, inserir novos registros e atualizar dados em sistemas robustos.
             </p>
 
             <h3 class="subtitulo">Aulas Básicas</h3>
             <ol class="lista">
-                <li><strong>SELECT:</strong> Consulta dados de uma tabela</li>
-                <li><strong>INSERT:</strong> Insere novos dados</li>
-                <li><strong>UPDATE:</strong> Atualiza registros existentes</li>
-                <li><strong>DELETE:</strong> Remove registros</li>
-                <li><strong>WHERE:</strong> Filtra resultados com condições</li>
-                <li><strong>JOIN:</strong> Junta dados de tabelas diferentes</li>
+                <li><strong>SELECT:</strong> O comando principal para selecionar e exibir dados de tabelas: <code>SELECT * FROM usuarios;</code></li>
+                <li><strong>INSERT INTO:</strong> Como inserir novas informações no banco: <code>INSERT INTO usuarios (nome, email) VALUES ('Ailton', 'ailton@example.com');</code></li>
+                <li><strong>UPDATE:</strong> Modificar dados existentes no banco de dados com segurança: <code>UPDATE usuarios SET ativo = true WHERE id = 1;</code></li>
+                <li><strong>DELETE:</strong> Excluir dados específicos (sempre lembrando do WHERE!): <code>DELETE FROM usuarios WHERE id = 5;</code></li>
+                <li><strong>WHERE e Operadores:</strong> Filtrar buscas por critérios lógicos (<code>=</code>, <code>&gt;</code>, <code>LIKE</code>, <code>AND</code>, <code>OR</code>).</li>
+                <li><strong>JOINs (INNER, LEFT, RIGHT):</strong> Unificar dados distribuídos em tabelas diferentes através de chaves primárias e estrangeiras.</li>
             </ol>
 
             <h3 class="subtitulo">Curiosidades</h3>
             <ul class="lista">
-                <li>💾 SQL foi criado na década de 1970 pela IBM.</li>
-                <li>🔎 A maioria dos sistemas de banco de dados usam dialetos SQL com pequenas diferenças.</li>
-                <li>📊 Comandos SQL podem manipular milhões de registros com poucas linhas.</li>
-                <li>🔒 É essencial para quem trabalha com backend, análise de dados ou administração de bancos.</li>
-                <li>🚀 SQL é simples, mas poderoso — uma habilidade valorizada no mercado.</li>
+                <li>💾 O SQL foi criado na década de 1970 nos laboratórios da IBM por Donald D. Chamberlin e Raymond F. Boyce.</li>
+                <li>🔎 O nome original da linguagem era SEQUEL (Structured English Query Language), mas teve que ser encurtado para SQL devido a um problema de marca registrada com uma empresa aérea.</li>
+                <li>📊 Bancos de dados relacionais populares como MySQL, PostgreSQL, Oracle, SQLite e SQL Server utilizam dialetos muito próximos da linguagem SQL padrão.</li>
+                <li>🔒 Um dos ataques mais comuns da web chama-se <strong>SQL Injection</strong>, que ocorre quando dados maliciosos digitados por usuários são executados diretamente no banco de dados.</li>
+                <li>🚀 Embora tenha mais de 50 anos de história, o SQL continua sendo a habilidade número um mais procurada para vagas de Análise de Dados e Ciência de Dados.</li>
             </ul>
         </section>
-                <div style="margin-top: 2rem;">
-        <a href="./tecnologia.html" class="botao-voltar">← Voltar </a>
-      </div>
+        
+        <div>
+            <a href="./index.html" class="botao-voltar">← Voltar ao menu principal</a>
+        </div>
     </main>
 </body>
 </html>

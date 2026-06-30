@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript - BitMind.dev</title>
     <link rel="stylesheet" href="./src/css/html-style.css">
-    <link rel="shortcut icon" href="./src/img/icons8-js-48.png" >
+    <link rel="shortcut icon" href="./src/img/icons8-js-48.png">
+    <title>JavaScript - BitMind.dev</title>
 </head>
-<body>
-    <h1>Módulo JavaScript</h1>
+<body class="theme-js">
+    <h1>JavaScript</h1>
 
     <main>
         <section class="modulo">
@@ -16,31 +16,34 @@
 
             <h3 class="subtitulo">O que é JavaScript?</h3>
             <p class="texto">
-                JavaScript é uma linguagem de programação utilizada para adicionar interatividade às páginas web. Com ele, é possível criar animações, formulários dinâmicos, jogos, sistemas e muito mais.
+                JavaScript (JS) é uma linguagem de programação interpretada, leve e orientada a objetos de alto nível. 
+                Originalmente concebida para rodar diretamente nos navegadores web e adicionar dinamismo, comportamento e interatividade às páginas HTML, 
+                ela hoje se expandiu para rodar em servidores (Node.js), aplicativos móveis e até inteligências artificiais.
             </p>
 
             <h3 class="subtitulo">Aulas Básicas</h3>
             <ol class="lista">
-                <li><strong>Introdução:</strong> <code>&lt;script&gt;</code> e como incluir JS no HTML</li>
-                <li><strong>Variáveis:</strong> <code>let</code>, <code>const</code> e <code>var</code></li>
-                <li><strong>Funções:</strong> <code>function nome() {}</code></li>
-                <li><strong>Condicionais:</strong> <code>if</code>, <code>else</code>, <code>switch</code></li>
-                <li><strong>Laços:</strong> <code>for</code>, <code>while</code>, <code>forEach</code></li>
-                <li><strong>DOM:</strong> Interação com HTML usando <code>document.querySelector</code></li>
+                <li><strong>Sintaxe e Variáveis:</strong> Aprender a declarar variáveis modernas usando <code>let</code> e <code>const</code> (evitando o antigo <code>var</code>).</li>
+                <li><strong>Tipos de Dados:</strong> Manipular textos (Strings), números (Numbers), booleanos (Booleans) e estruturas como Listas (Arrays) e Objetos (Objects).</li>
+                <li><strong>Funções:</strong> Entender a declaração de blocos de execução reaproveitáveis: <code>function somar(a, b) { return a + b; }</code> e Arrow Functions.</li>
+                <li><strong>Estruturas de Controle:</strong> Condicionais (<code>if</code>, <code>else</code>, <code>switch</code>) e laços de repetição (<code>for</code>, <code>while</code>, <code>map</code>, <code>forEach</code>).</li>
+                <li><strong>Manipulação da DOM:</strong> Interagir com o HTML da página, escutando cliques, alterando textos e modificando estilos CSS em tempo real usando <code>document.getElementById()</code>.</li>
+                <li><strong>Programação Assíncrona:</strong> Aprender a lidar com dados externos e requisições HTTP usando <code>fetch()</code>, <code>Promises</code> e a sintaxe <code>async/await</code>.</li>
             </ol>
 
             <h3 class="subtitulo">Curiosidades</h3>
             <ul class="lista">
-                <li>📅 Criado em apenas 10 dias por Brendan Eich, em 1995.</li>
-                <li>⚙️ Inicialmente se chamava Mocha, depois LiveScript e finalmente JavaScript.</li>
-                <li>🧠 Apesar do nome, **não** tem relação direta com Java.</li>
-                <li>🌍 É executado diretamente no navegador, sem necessidade de compilação.</li>
-                <li>🚀 É uma das linguagens mais populares do mundo, usada no frontend e backend (Node.js).</li>
+                <li>📅 O JavaScript foi criado em apenas 10 dias por Brendan Eich, em maio de 1995, enquanto trabalhava na Netscape Communications.</li>
+                <li>☕ O nome "JavaScript" foi uma jogada de marketing para pegar carona no enorme sucesso da linguagem Java da época, embora as duas não tenham nenhuma relação técnica.</li>
+                <li>⚙️ A especificação oficial da linguagem chama-se <strong>ECMAScript</strong> (ES), mantida por uma comissão internacional (TC39).</li>
+                <li>🌍 Todo navegador moderno vem com um motor (engine) interpretador de JavaScript embutido, como o poderoso motor V8 do Google Chrome e Edge.</li>
+                <li>🚀 Graças ao Node.js (lançado em 2009), desenvolvedores podem programar tanto o Front-End (interface) quanto o Back-End (servidor) usando apenas JavaScript!</li>
             </ul>
         </section>
-        <div style="margin-top: 2rem;">
-        <a href="./tecnologia.html" class="botao-voltar">← Voltar </a>
-      </div>
+        
+        <div>
+            <a href="./index.html" class="botao-voltar">← Voltar ao menu principal</a>
+        </div>
     </main>
 </body>
 </html>
